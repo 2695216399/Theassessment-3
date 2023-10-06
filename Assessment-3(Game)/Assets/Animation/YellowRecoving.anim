@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RedDown
+  m_Name: YellowRecoving
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2078469747, guid: 93dacf9fc6a98416a881fb4b7bb6c8bc, type: 3}
+      value: {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
+    - time: 0.16666667
+      value: {fileID: -1572390543, guid: cd0fd581dfec942e2939b20185787f3e, type: 3}
+    - time: 0.33333334
+      value: {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
+    - time: 0.5
+      value: {fileID: -1572390543, guid: cd0fd581dfec942e2939b20185787f3e, type: 3}
     - time: 0.6666667
-      value: {fileID: -1566154264, guid: 93dacf9fc6a98416a881fb4b7bb6c8bc, type: 3}
+      value: {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +52,11 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2078469747, guid: 93dacf9fc6a98416a881fb4b7bb6c8bc, type: 3}
-    - {fileID: -1566154264, guid: 93dacf9fc6a98416a881fb4b7bb6c8bc, type: 3}
+    - {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
+    - {fileID: -1572390543, guid: cd0fd581dfec942e2939b20185787f3e, type: 3}
+    - {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
+    - {fileID: -1572390543, guid: cd0fd581dfec942e2939b20185787f3e, type: 3}
+    - {fileID: 479791033, guid: bc8df2fc34db54552b846796ce3e73e3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
