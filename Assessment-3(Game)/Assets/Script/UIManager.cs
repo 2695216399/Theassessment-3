@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
+using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +13,11 @@ public class UIManager : MonoBehaviour
 
     int newScore = 5000;
     float newGameTime = 150.0f;
+
+     void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     void Start()
     {
@@ -47,5 +55,41 @@ public class UIManager : MonoBehaviour
     void SavePlayerPrefs()
     {
         PlayerPrefs.Save();
+    }
+
+    public void LoadFirstLevel()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        SceneManager.LoadScene("PacScene");
+
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit button clicked");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
+#endif
+    }
+
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "PacScene")
+        {
+            GameObject quitButton = GameObject.FindWithTag("QuitButton");
+
+            if (quitButton != null)
+            {
+                Button buttonComponent = quitButton.GetComponent<Button>();
+
+                buttonComponent.onClick.AddListener(QuitGame);
+            }
+        }
     }
 }
