@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: ShingPower
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1517293684, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  - {fileID: 96964380, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  - {fileID: 1421668018, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  - {fileID: 1408086476, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  - {fileID: -1237225052, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  - {fileID: 1956468694, guid: 5060f482b711a471887e86a816db627b, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
